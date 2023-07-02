@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content";
+import type { InferGetStaticPropsType } from "astro";
+import { Image } from "astro:assets";
+
+export async function getStaticPaths() {
+  const items = await getCollection("post");
+
+  return items.map(({ slug, data, render }) => ({
+    params: {
+      post: slug,
+    },
+    props: {
+      data,
+      render,
+    },
+  }));
+}
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+const { Content } = await Astro.props.render();
+const { image, title } = Astro.props.data;
+---
+
+<h1>{title}</h1>
+<Image src={image} width="200" alt={title} />
+<Content />
