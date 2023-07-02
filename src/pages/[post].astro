@@ -1,10 +1,10 @@
 ---
-import { getCollection } from "astro:content";
-import type { InferGetStaticPropsType } from "astro";
-import { Image } from "astro:assets";
+import { getCollection } from 'astro:content';
+import type { InferGetStaticPropsType } from 'astro';
+import { Image } from 'astro:assets';
 
 export async function getStaticPaths() {
-  const items = await getCollection("post");
+  const items = await getCollection('post');
 
   return items.map(({ slug, data, render }) => ({
     params: {

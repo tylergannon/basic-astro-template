@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+pnpm format \
+    && git diff-index --cached --name-only HEAD --diff-filter=AM | xargs git add \
+    && pnpm run "/(lint|check)\$/"

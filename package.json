@@ -3,13 +3,15 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "astro": "astro",
     "build": "astro build",
-    "preview": "astro preview",
+    "check": "astro check",
+    "dev": "astro dev",
     "format:check": "prettier --plugin-search-dir=. --check .",
     "format": "prettier --plugin-search-dir=. --write .",
-    "astro": "astro"
+    "lint": "prettier --plugin-search-dir . --check . && eslint .",
+    "preview": "astro preview",
+    "start": "astro dev"
   },
   "dependencies": {
     "@astrojs/mdx": "^0.19.7",
