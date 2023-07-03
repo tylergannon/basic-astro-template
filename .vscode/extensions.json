@@ -1,4 +1,13 @@
 {
-  "recommendations": ["astro-build.astro-vscode"],
+  "recommendations": [
+    "astro-build.astro-vscode",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "rvest.vs-code-prettier-eslint",
+    "tamasfe.even-better-toml",
+    "unifiedjs.vscode-mdx",
+    "vscodevim.vim"
+  ],
   "unwantedRecommendations": []
 }

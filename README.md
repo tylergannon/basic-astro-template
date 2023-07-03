@@ -7,13 +7,20 @@ This is basically a copy of the [Astroship](https://github.com/surjithctly/astro
   instead of the `@astrojs/image` component.
 - eslint configuration.
 - prettier.
-- Husky prr-commit to validate application.
+- Husky pre-commit to validate application.
+- VSCode extensions configuration.
 
 If you like this template, please consider purchasing a license from
 [web3templates](https://web3templates.com/) (no affiliation).
 
 ```
-pnpm create astro@latest -- --template tylergannon/astro-starter
+pnpm create astro@latest \
+  --template tylergannon/basic-astro-template \
+  --install \
+  --git \
+  --skip-houston \
+  --typescript strictest \
+  my-app
 ```
 
 ## 🚀 Project Structure
