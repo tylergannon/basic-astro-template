@@ -6,7 +6,7 @@
     "astro": "astro",
     "build": "astro build",
     "check": "astro check",
-    "dev": "astro dev",
+    "dev": "astro check --watch & astro dev",
     "format": "prettier --plugin-search-dir=. --write .",
     "lint": "prettier --plugin-search-dir . --check . && eslint .",
     "preview": "astro preview",
