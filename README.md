@@ -1,13 +1,20 @@
 # My Astro Starter
 
-```
-npm create astro@latest -- --template tylergannon/astro-starter
-```
+This is basically a copy of the [Astroship](https://github.com/surjithctly/astroship) template for
+[🚀 Astro](https://astro.build/), with a few minor modifications:
 
-- [ ] Edit Hero component
-- [ ]
+- Use the [Experimental Astro Assets](https://docs.astro.build/en/guides/assets/) features
+  instead of the `@astrojs/image` component.
+- eslint configuration.
+- prettier.
+- Husky prr-commit to validate application.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+If you like this template, please consider purchasing a license from
+[web3templates](https://web3templates.com/) (no affiliation).
+
+```
+pnpm create astro@latest -- --template tylergannon/astro-starter
+```
 
 ## 🚀 Project Structure
 
@@ -22,24 +29,21 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `pnpm install`         | Installs dependencies                            |
+| `pnpm dev`             | Starts local dev server at `localhost:3000`      |
+| `pnpm lint`            | Runs prettier and eslint to verify application.  |
+| `pnpm format`          | Runs prettier to reformat files.                 |
+| `pnpm check`           | Runs `astro check` to validate application.      |
+| `pnpm build`           | Build your production site to `./dist/`          |
+| `pnpm preview`         | Preview your build locally, before deploying     |
+| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
 ## 👀 Want to learn more?
 
