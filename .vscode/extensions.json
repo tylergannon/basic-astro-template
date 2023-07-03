@@ -7,7 +7,8 @@
     "rvest.vs-code-prettier-eslint",
     "tamasfe.even-better-toml",
     "unifiedjs.vscode-mdx",
-    "vscodevim.vim"
+    "vscodevim.vim",
+    "redhat.vscode-yaml"
   ],
   "unwantedRecommendations": []
 }

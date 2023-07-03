@@ -1,0 +1,47 @@
+---
+import type { ImageMetadata } from 'astro';
+import { getImage } from 'astro:assets';
+
+export type Props = {
+  src: ImageMetadata;
+};
+
+const format = 'png';
+
+const { src } = Astro.props;
+
+async function getImageSize(width: number) {
+  const it = await getImage({ src, format, width });
+  return it.src;
+}
+---
+
+<link rel="shortcut icon" href={await getImageSize(16)} />
+<link
+  rel="icon"
+  type="image/png"
+  sizes="196x196"
+  href={await getImageSize(196)}
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="160x160"
+  href={await getImageSize(160)}
+/>
+<link rel="icon" type="image/png" sizes="96x96" href={await getImageSize(96)} />
+<link rel="icon" type="image/png" sizes="64x64" href={await getImageSize(64)} />
+<link rel="icon" type="image/png" sizes="32x32" href={await getImageSize(32)} />
+<link rel="icon" type="image/png" sizes="16x16" href={await getImageSize(16)} />
+<link rel="apple-touch-icon" href={await getImageSize(57)} />
+<link rel="apple-touch-icon" sizes="114x114" href={await getImageSize(114)} />
+<link rel="apple-touch-icon" sizes="72x72" href={await getImageSize(72)} />
+<link rel="apple-touch-icon" sizes="144x144" href={await getImageSize(144)} />
+<link rel="apple-touch-icon" sizes="60x60" href={await getImageSize(60)} />
+<link rel="apple-touch-icon" sizes="120x120" href={await getImageSize(120)} />
+<link rel="apple-touch-icon" sizes="76x76" href={await getImageSize(76)} />
+<link rel="apple-touch-icon" sizes="152x152" href={await getImageSize(152)} />
+<link rel="apple-touch-icon" sizes="180x180" href={await getImageSize(180)} />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content={await getImageSize(144)} />
+<meta name="msapplication-config" content="/browserconfig.xml" />

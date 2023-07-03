@@ -9,9 +9,14 @@ This is basically a copy of the [Astroship](https://github.com/surjithctly/astro
 - prettier.
 - Husky pre-commit to validate application.
 - VSCode extensions configuration.
+- Favicon configuration ... just plug in your image.
 
 If you like this template, please consider purchasing a license from
 [web3templates](https://web3templates.com/) (no affiliation).
+
+## Getting Started
+
+### Create New Astro App Using Template
 
 ```
 pnpm create astro@latest \
@@ -22,6 +27,11 @@ pnpm create astro@latest \
   --typescript strictest \
   my-app
 ```
+
+### Basic Stuff
+
+- [ ] Replace favicon and correct the url in Layout / head tag.
+- [ ] Open appConfig.ts and set up data for your application.
 
 ## 🚀 Project Structure
 

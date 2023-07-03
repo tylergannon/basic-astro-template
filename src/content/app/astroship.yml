@@ -1,0 +1,12 @@
+---
+name: Astroship
+defaultTitle: Starter Template for Astro with Tailwind CSS
+description: Astroship is a starter website template for Astro built with TailwindCSS.
+favicon: $images/cartoon-space-rocket.png
+openGraph:
+  image: $images/opengraph.jpg
+  imageAlt: Astroship Homepage Screenshot
+  twitter:
+    card: summary_large_image
+    site: '@web3templates'
+    creator: '@surjithctly'
