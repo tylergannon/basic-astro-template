@@ -5,8 +5,9 @@ import sitemap from '@astrojs/sitemap';
 // import tailwind from "@astrojs/tailwind";
 
 import tailwind from '@astrojs/tailwind';
-
 import robotsTxt from 'astro-robots-txt';
+
+import compress from 'astro-compress';
 
 // https://astro.build/config
 export default defineConfig({
@@ -17,7 +18,7 @@ export default defineConfig({
   image: {
     service: sharpImageService(),
   },
-  integrations: [tailwind(), mdx(), sitemap(), robotsTxt()],
+  integrations: [tailwind(), mdx(), sitemap(), robotsTxt(), compress()],
   build: {
     inlineStylesheets: 'always',
   },
