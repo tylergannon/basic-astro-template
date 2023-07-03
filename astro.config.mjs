@@ -4,6 +4,8 @@ import sitemap from '@astrojs/sitemap';
 
 // import tailwind from "@astrojs/tailwind";
 
+import tailwind from '@astrojs/tailwind';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'http://localhost:3000',
@@ -13,5 +15,5 @@ export default defineConfig({
   image: {
     service: sharpImageService(),
   },
-  integrations: [mdx(), sitemap()],
+  integrations: [mdx(), sitemap(), tailwind()],
 });
