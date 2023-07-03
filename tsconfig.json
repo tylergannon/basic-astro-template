@@ -5,7 +5,9 @@
     "baseUrl": ".",
     "paths": {
       "$/*": ["./src/*"],
-      "$images/*": ["./src/assets/images/*"]
+      "$components/*": ["./src/components/*"],
+      "$images/*": ["./src/assets/images/*"],
+      "$utils/*": ["./src/utils/*"]
     }
   }
 }
