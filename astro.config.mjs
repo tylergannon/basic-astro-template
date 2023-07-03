@@ -15,5 +15,8 @@ export default defineConfig({
   image: {
     service: sharpImageService(),
   },
-  integrations: [mdx(), sitemap(), tailwind()],
+  integrations: [tailwind(), mdx(), sitemap()],
+  build: {
+    inlineStylesheets: 'always',
+  },
 });
