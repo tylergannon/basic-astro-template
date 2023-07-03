@@ -6,6 +6,8 @@ import sitemap from '@astrojs/sitemap';
 
 import tailwind from '@astrojs/tailwind';
 
+import robotsTxt from 'astro-robots-txt';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'http://localhost:3000',
@@ -15,7 +17,7 @@ export default defineConfig({
   image: {
     service: sharpImageService(),
   },
-  integrations: [tailwind(), mdx(), sitemap()],
+  integrations: [tailwind(), mdx(), sitemap(), robotsTxt()],
   build: {
     inlineStylesheets: 'always',
   },

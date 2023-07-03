@@ -17,6 +17,9 @@ dependencies:
   astro:
     specifier: ^2.7.3
     version: 2.7.3(sharp@0.32.1)
+  astro-robots-txt:
+    specifier: ^0.5.0
+    version: 0.5.0
 
 devDependencies:
   '@astrojs/ts-plugin':
@@ -1512,6 +1515,16 @@ packages:
       }
     dev: true
 
+  /astro-robots-txt@0.5.0:
+    resolution:
+      {
+        integrity: sha512-MJDcxBDjEKSp7Uvw32cnmkPHlmjQ/pW5JwzMhKEegFRoGaiSh2i1kkh1QEhk1UpGnAsSondWCoIt2xpG8qjSgA==,
+      }
+    dependencies:
+      valid-filename: 4.0.0
+      zod: 3.21.4
+    dev: false
+
   /astro-seo@0.7.4:
     resolution:
       {
@@ -2808,6 +2821,14 @@ packages:
     dependencies:
       flat-cache: 3.0.4
     dev: true
+
+  /filename-reserved-regex@3.0.0:
+    resolution:
+      {
+        integrity: sha512-hn4cQfU6GOT/7cFHXBqeBg2TbrMBgdD0kcjLhvSQYYwm3s4B6cjvBfb7nBALJLAXqmU5xajSa7X2NnUud/VCdw==,
+      }
+    engines: { node: ^12.20.0 || ^14.13.1 || >=16.0.0 }
+    dev: false
 
   /fill-range@7.0.1:
     resolution:
@@ -6363,6 +6384,16 @@ packages:
       diff: 5.1.0
       kleur: 4.1.5
       sade: 1.8.1
+    dev: false
+
+  /valid-filename@4.0.0:
+    resolution:
+      {
+        integrity: sha512-VEYTpTVPMgO799f2wI7zWf0x2C54bPX6NAfbZ2Z8kZn76p+3rEYCTYVYzMUcVSMvakxMQTriBf24s3+WeXJtEg==,
+      }
+    engines: { node: ^12.20.0 || ^14.13.1 || >=16.0.0 }
+    dependencies:
+      filename-reserved-regex: 3.0.0
     dev: false
 
   /vfile-location@4.1.0:
