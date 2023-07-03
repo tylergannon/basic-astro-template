@@ -1,0 +1,61 @@
+---
+import heroImage from '$images/hero.png';
+import Link from '$components/ui/link.astro';
+import { Icon } from 'astro-icon';
+import { Image } from 'astro:assets';
+// <Picture
+//   src={heroImage}
+//   alt="Astronaut in the air"
+//   widths={[200, 400, 600]}
+//   aspectRatio="4:3"
+//   sizes="(max-width: 800px) 100vw, 620px"
+//   loading="eager"
+//   format="avif"
+// />
+---
+
+<main
+  class="grid place-items-center pb-8 pt-16 md:pb-24 md:pt-12 lg:grid-cols-2">
+  <div class="hidden py-6 md:order-1 md:block">
+    <Image
+      src={heroImage}
+      alt="Astronaut in the air"
+      width="620"
+      height={(620 * 3) / 4}
+      loading="eager"
+    />
+  </div>
+  <div>
+    <h1
+      class="text-5xl font-bold lg:text-6xl lg:tracking-tight xl:text-7xl xl:tracking-tighter">
+      Marketing website done with Astro
+    </h1>
+    <p class="mt-4 max-w-xl text-lg text-slate-600">
+      Astroship is a starter template for startups, marketing websites & landing
+      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly create
+      any website with this starter.
+    </p>
+    <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+      <Link
+        href="#"
+        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
+        target="_blank"
+        class="flex items-center justify-center gap-1"
+        rel="noopener">
+        <Icon class="h-5 w-5 text-white" name="bx:bxs-cloud-download" />
+
+        Download for Free
+      </Link>
+      <Link
+        size="lg"
+        style="outline"
+        rel="noopener"
+        href="https://github.com/surjithctly/astroship"
+        class="flex items-center justify-center gap-1"
+        target="_blank">
+        <Icon class="h-4 w-4 text-black" name="bx:bxl-github" />
+        GitHub Repo
+      </Link>
+    </div>
+  </div>
+</main>

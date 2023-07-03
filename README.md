@@ -4,6 +4,9 @@
 npm create astro@latest -- --template tylergannon/astro-starter
 ```
 
+- [ ] Edit Hero component
+- [ ]
+
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
 ## 🚀 Project Structure

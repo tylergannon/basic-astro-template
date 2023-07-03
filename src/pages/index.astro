@@ -1,28 +1,17 @@
 ---
 import Container from '$/components/container.astro';
 import Layout from '$/layouts/Layout.astro';
-import sauce from '$images/hero.png';
-
-import { Image } from 'astro:assets';
+import Hero from '$/components/hero.astro';
+import Features from '$/components/features.astro';
+import Logos from '$/components/logos.astro';
+import Cta from '$/components/cta.astro';
 ---
 
-<!-- <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-  </body>
-</html> -->
 <Layout title="">
   <Container>
-    <Image src={sauce} alt="Sauce" width="500" />
-    <!-- <Hero />
+    <Hero />
     <Features />
     <Logos />
-    <Cta /> -->
+    <Cta />
   </Container>
 </Layout>
