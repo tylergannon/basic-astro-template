@@ -14,7 +14,7 @@ export function getFormattedDate(date?: string | undefined) {
 
 export async function getFavicons(src: ImageMetadata) {
   const images = await Promise.all(
-    [16, 32, 180].map((width) => getImage({ src, width }))
+    [16, 32, 180].map((width) => getImage({ src, width })),
   );
   return {
     sm: images[0],

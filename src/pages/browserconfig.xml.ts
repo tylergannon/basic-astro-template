@@ -5,7 +5,7 @@ import { getImage } from 'astro:assets';
 export async function get() {
   const { favicon: src } = await getAppData();
   const images = (await Promise.all(
-    [70, 150, 310].map((width) => getImage({ src, width, format: 'png' }))
+    [70, 150, 310].map((width) => getImage({ src, width, format: 'png' })),
   )) as [GetImageResult, GetImageResult, GetImageResult];
 
   const body = `<?xml version="1.0" encoding="utf-8"?>
