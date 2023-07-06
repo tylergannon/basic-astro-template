@@ -5,6 +5,8 @@ This is basically a copy of the [Astroship](https://github.com/surjithctly/astro
 
 - Use the [Experimental Astro Assets](https://docs.astro.build/en/guides/assets/) features
   instead of the `@astrojs/image` component.
+- Add basic [Picture component](https://github.com/tylergannon/astro-picture-element)
+  for art direction.
 - eslint configuration.
 - prettier.
 - Husky pre-commit to validate application.
