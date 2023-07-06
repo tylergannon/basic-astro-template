@@ -47,8 +47,8 @@ devDependencies:
     specifier: ^0.7.4
     version: 0.7.4
   daisyui:
-    specifier: ^3.1.9
-    version: 3.1.9(postcss@8.4.25)
+    specifier: ^3.1.10
+    version: 3.1.10(postcss@8.4.25)
   eslint:
     specifier: ^8.44.0
     version: 8.44.0
@@ -1388,7 +1388,7 @@ packages:
         integrity: sha512-Y/uImid8aAwrEA24/1tcRZwpxX3pIFTSilcNDKSPn+Y2iDywSEachzRuvgAYYLR3wpGXAsMbv5lvKLDZLeYPAw==,
       }
     dependencies:
-      '@types/unist': 2.0.6
+      '@types/unist': 3.0.0
 
   /@types/mdx@2.0.5:
     resolution:
@@ -1409,7 +1409,7 @@ packages:
         integrity: sha512-3TGCfOcy8R8mMQ4CNSNOe3PG66HttvjcLzCoOpvXvDtfWOTi+uT/rxeOKm/qEwbM4SNe1O/PjdiBK2YcTjU4OQ==,
       }
     dependencies:
-      '@types/unist': 2.0.6
+      '@types/unist': 3.0.0
 
   /@types/node@17.0.45:
     resolution:
@@ -1443,6 +1443,12 @@ packages:
     resolution:
       {
         integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==,
+      }
+
+  /@types/unist@3.0.0:
+    resolution:
+      {
+        integrity: sha512-MFETx3tbTjE7Uk6vvnWINA/1iJ7LuMdO4fcq8UfF0pRbj01aGLduVvQcRyswuACJdpnHgg8E3rQLhaRdNEJS0w==,
       }
 
   /@types/yargs-parser@21.0.0:
@@ -2437,10 +2443,10 @@ packages:
       css-tree: 2.2.1
     dev: false
 
-  /daisyui@3.1.9(postcss@8.4.25):
+  /daisyui@3.1.10(postcss@8.4.25):
     resolution:
       {
-        integrity: sha512-GkQR3iLnTfxNsQz7EZXS5bPY65iJM7jdiHtQZWDpRVmBrMlq8Nmrc+t8XmjGdOmJljAPFjtMSD9E9zAnhXF7qg==,
+        integrity: sha512-Q6+zf60LROgSZb3+0d3jcQu3uUbfWPpEgHWrY2vw5XS7ekyI/WJo9E4R7148PdOt/OQNOGM4w9Z31DRklzByZg==,
       }
     engines: { node: '>=16.9.0' }
     peerDependencies:
