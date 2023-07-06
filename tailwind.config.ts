@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss';
 import typography from '@tailwindcss/typography';
+import daisyui from 'daisyui';
 
 const config: Config = {
   darkMode: 'media',
@@ -7,7 +8,7 @@ const config: Config = {
   theme: {
     extend: {},
   },
-  plugins: [typography],
+  plugins: [daisyui, typography],
 };
 
 export default config;
