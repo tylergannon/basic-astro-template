@@ -8,7 +8,8 @@
     "tamasfe.even-better-toml",
     "unifiedjs.vscode-mdx",
     "vscodevim.vim",
-    "redhat.vscode-yaml"
+    "redhat.vscode-yaml",
+    "mrniamster.daisyui-snippets"
   ],
   "unwantedRecommendations": []
 }
