@@ -10,7 +10,7 @@ interface Props {
 const { title, lastItem, children } = Astro.props;
 ---
 
-<li class="relative">
+<li class="relative" role="menuitem">
   <Dropdown class="group">
     <button
       class="flex w-full items-center gap-1 py-2 text-gray-600 hover:text-gray-900 lg:w-auto lg:px-3">
@@ -41,6 +41,7 @@ const { title, lastItem, children } = Astro.props;
           {
             children.map((item) => (
               <a
+                role="menuitem"
                 href={item.path}
                 class="py-1 text-gray-600 hover:text-gray-900">
                 {item.title}

@@ -4,6 +4,21 @@ import Link from '$components/ui/link.astro';
 import Dropdown from './dropdownMenu.astro';
 import { Astronav, MenuItems, MenuIcon } from 'astro-navbar';
 
+import rocket from '$images/cartoon-space-rocket.png';
+
+import {
+  Picture,
+  breakpoints,
+  type PictureSource,
+} from 'astro-picture-element';
+
+const sources: PictureSource[] = [
+  { width: 28, media: { 'max-width': breakpoints.sm } },
+  { width: 35, media: { 'max-width': breakpoints.md } },
+  { width: 40, media: { 'max-width': breakpoints.lg } },
+  { width: 45, media: { 'max-width': breakpoints.xl } },
+];
+
 const menuitems = [
   {
     title: 'Features',
@@ -38,10 +53,12 @@ const menuitems = [
   <header class="my-5 flex flex-col items-center justify-between lg:flex-row">
     <Astronav>
       <div class="flex w-full items-center justify-between lg:w-auto">
-        <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">Astro</span><span
-            class="text-slate-500">ship</span
-          >
+        <a href="/" class="flex flex-row items-center text-lg">
+          <Picture src={rocket} width={60} alt="Site logo" {sources} />
+          <div class="h-full flex-grow font-bold text-slate-800">Astro</div><div
+            class="h-full text-slate-500">
+            ship
+          </div>
         </a>
         <div class="block lg:hidden">
           <MenuIcon class="h-4 w-4 text-gray-800" />
@@ -73,10 +90,6 @@ const menuitems = [
             ))
           }
         </ul>
-        <div class="mt-3 flex items-center gap-4 lg:hidden">
-          <Link href="#" style="muted" block size="md">Log in</Link>
-          <Link href="#" size="md" block>Sign up</Link>
-        </div>
       </MenuItems>
     </Astronav>
     <div>

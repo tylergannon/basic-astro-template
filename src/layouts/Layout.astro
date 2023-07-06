@@ -5,7 +5,7 @@ import Navbar from '$components/navbar/navbar.astro';
 import Favicons from '$/components/favicons.astro';
 import { getAppData } from '../appConfig';
 import { getImage } from 'astro:assets';
-
+import Container from '$/components/container.astro';
 // import '@fontsource/inter/variable.css';
 
 export interface Props {
@@ -59,7 +59,10 @@ const makeTitle = app.name + ' | ' + pageTitle;
   </head>
   <body>
     <Navbar />
-    <slot />
+
+    <Container>
+      <slot />
+    </Container>
     <Footer />
     <style is:global>
       /* Improve Page speed */
