@@ -1,6 +1,5 @@
 ---
 import Container from '$components/container.astro';
-import Link from '$components/ui/link.astro';
 import Dropdown from './dropdownMenu.astro';
 import { Astronav, MenuItems, MenuIcon } from 'astro-navbar';
 
@@ -50,9 +49,9 @@ const menuitems = [
 ---
 
 <Container>
-  <header class="my-5 flex flex-col items-center justify-between lg:flex-row">
+  <header class="my-5 flex flex-col items-center justify-between md:flex-row">
     <Astronav>
-      <div class="flex w-full items-center justify-between lg:w-auto">
+      <div class="flex w-full items-center justify-between md:w-auto">
         <a href="/" class="flex flex-row items-center text-lg">
           <Picture src={rocket} width={60} alt="Site logo" {sources} />
           <div class="h-full flex-grow font-bold text-slate-800">Astro</div><div
@@ -60,12 +59,12 @@ const menuitems = [
             ship
           </div>
         </a>
-        <div class="block lg:hidden">
+        <div class="block md:hidden">
           <MenuIcon class="h-4 w-4 text-gray-800" />
         </div>
       </div>
-      <MenuItems class="mt-2 hidden w-full lg:mt-0 lg:flex lg:w-auto">
-        <ul class="flex flex-col lg:flex-row lg:gap-3">
+      <MenuItems class="mt-2 hidden w-full md:mt-0 md:flex md:w-auto">
+        <ul class="flex flex-col md:flex-row md:gap-3">
           {
             menuitems.map((item, index) => (
               <>
@@ -81,7 +80,7 @@ const menuitems = [
                   <li>
                     <a
                       href={item.path}
-                      class="flex py-2 text-gray-600 hover:text-gray-900 lg:px-3">
+                      class="flex py-2 text-gray-600 hover:text-gray-900 md:px-3">
                       {item.title}
                     </a>
                   </li>
@@ -92,11 +91,5 @@ const menuitems = [
         </ul>
       </MenuItems>
     </Astronav>
-    <div>
-      <div class="hidden items-center gap-4 lg:flex">
-        <a href="#">Log in</a>
-        <Link href="#" size="md">Sign up</Link>
-      </div>
-    </div>
   </header>
 </Container>

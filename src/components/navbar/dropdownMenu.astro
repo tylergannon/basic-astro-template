@@ -13,7 +13,7 @@ const { title, lastItem, children } = Astro.props;
 <li class="relative" role="menuitem">
   <Dropdown class="group">
     <button
-      class="flex w-full items-center gap-1 py-2 text-gray-600 hover:text-gray-900 lg:w-auto lg:px-3">
+      class="flex w-full items-center gap-1 py-2 text-gray-600 hover:text-gray-900 md:w-auto md:px-3">
       <span>{title}</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -31,13 +31,13 @@ const { title, lastItem, children } = Astro.props;
     <DropdownItems>
       <div
         class:list={[
-          'lg:absolute w-full lg:w-48 z-10',
+          'md:absolute w-full md:w-48 z-10',
           lastItem
-            ? 'lg:right-0 origin-top-right'
-            : 'lg:left-0 origin-top-left',
+            ? 'md:right-0 origin-top-right'
+            : 'md:left-0 origin-top-left',
         ]}>
         <div
-          class="flex flex-col px-3 lg:rounded-md lg:border lg:bg-white lg:py-2 lg:shadow">
+          class="flex flex-col px-3 md:rounded-md md:border md:bg-white md:py-2 md:shadow">
           {
             children.map((item) => (
               <a
