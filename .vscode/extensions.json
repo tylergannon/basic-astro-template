@@ -9,7 +9,8 @@
     "unifiedjs.vscode-mdx",
     "vscodevim.vim",
     "redhat.vscode-yaml",
-    "mrniamster.daisyui-snippets"
+    "mrniamster.daisyui-snippets",
+    "svelte.svelte-vscode"
   ],
   "unwantedRecommendations": []
 }
